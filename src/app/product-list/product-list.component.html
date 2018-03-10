@@ -1,0 +1,20 @@
+<div class="container">
+
+<p>Products <span class="items">{{data.length}} items </span></p>
+  <table class="table table-striped">
+   
+<tr *ngFor="let product of data">
+     <p><img [attr.src]="product.icon" (click)="showDetails(product)" id="details">
+      <td class="productproperties name">{{product.name}}</td>
+      <td class="productproperties">Price :{{product.price}}</td>
+      <td class="productproperties">Discount :<span class="discount"> {{product.discount}}</span></td>
+     </p>
+
+    
+      <td>
+	    <button (click)="addToCart(product)">Add to Cart</button>
+      </td>
+    </tr>
+</table>
+
+</div>

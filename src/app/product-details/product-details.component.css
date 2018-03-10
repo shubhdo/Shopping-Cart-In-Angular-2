@@ -1,0 +1,20 @@
+.items {
+	font-size: 10px;
+}
+.discount {  
+ text-decoration: line-through;
+}
+.productproperties {
+	padding: 20px;
+}
+.tiles {
+	height: 20px;
+	width: 20px;
+}
+.container {
+   text-align: center;
+
+}
+.name {
+	font-weight: bold;
+}

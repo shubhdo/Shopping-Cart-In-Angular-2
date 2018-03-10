@@ -1,0 +1,39 @@
+[
+{
+  "id":"1",
+  "name":"roadster",
+  "price":1000,
+  "icon":"https://assets.myntassets.com/w_245,c_limit,fl_progressive,dpr_1.0/assets/images/banners/2017/12/7/11512647055077-best-winterwear-DK-strip.jpg",
+  "colors":["blue" , "green" , "gray"],
+  "discount":80,
+  "description":"Roadster Pack of 2 Regular Fit Shirt"
+},
+{
+  "id":"2",
+  "name":"highlander",
+  "price":600,
+    "icon":"https://assets.myntassets.com/w_245,c_limit,fl_progressive,dpr_1.0/assets/images/banners/2017/12/7/11512647055077-best-winterwear-DK-strip.jpg",
+
+  "colors":["blue" , "green" , "gray"],
+  "discount":100,
+  "description":"highlander Pack of 2 Regular Fit Shirt"
+},{
+  "id":"3",
+  "name":"ucb",
+
+  "icon":"https://assets.myntassets.com/w_245,c_limit,fl_progressive,dpr_1.0/assets/images/banners/2017/12/7/11512647055077-best-winterwear-DK-strip.jpg",
+  "price":8000,
+  "colors":["blue" , "green" , "gray"],
+  "discount":"700",
+  "description":"ucb Pack of 2 Regular Fit Shirt"
+},{
+  "id":"4",
+  "name":"nike",
+  "price":4000,
+  "colors":["blue" , "green" , "gray"],
+
+  "icon":"https://assets.myntassets.com/w_245,c_limit,fl_progressive,dpr_1.0/assets/images/banners/2017/12/7/11512647055077-best-winterwear-DK-strip.jpg",
+  "discount":500,
+  "description":"nike Pack of 2 Regular Fit Shirt"
+}
+]

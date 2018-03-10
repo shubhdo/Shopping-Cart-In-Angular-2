@@ -1,0 +1,24 @@
+<div class="container">
+<div *ngIf="cart.length>0">	
+<h1>Your Cart</h1>	
+<p>Products <span class="items">{{cart.length}} items </span></p>
+<p>Total Price {{totalPrice}}</p>    
+
+  <table class="table table-striped">
+  	<tr *ngFor="let cart of cart">
+
+        <p><img [attr.src]="cart.icon">
+      <td class="productproperties name">{{cart.name}}</td>
+      <td class="productproperties">Price :{{cart.price}}</td>
+      <td class="productproperties">Discount :<span class="discount"> {{cart.discount}}</span></td>
+     </p>
+</tr>
+</table>
+</div>
+<div *ngIf="cart.length<=0" >
+	<p>No Product Added To Cart</p>
+	<button  routerLink="/">Browse Products</button>
+
+</div>
+</div>
+
