@@ -4,6 +4,9 @@ import { RouterModule, Routes} from '@angular/router';
 import {DataService} from './services/data.service';
 import { HttpModule } from '@angular/http';
 import {ModalModule} from "ng2-modal";
+import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+import {MatCardModule} from '@angular/material/card';
+import {MatListModule} from '@angular/material/list';
 
 
 import { AppComponent } from './app.component';
@@ -23,8 +26,10 @@ import { CartDetailsComponent } from './cart-details/cart-details.component'
     BrowserModule,
     RouterModule.forRoot(routes),
     HttpModule,
-    ModalModule
-
+    ModalModule,
+    MatButtonModule, MatCheckboxModule,
+    MatCardModule
+    MatListModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

@@ -1,18 +1,45 @@
 <div class="container">
 
- <p><img [attr.src]="data.icon">
+<mat-card class="card">
+  <mat-card-header>
+    <mat-card-title class="heading">{{data.name}}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image  [attr.src]="data.icon">
+  <mat-card-content>
+    
       <td class="productproperties name">{{data.name}}</td>
       <td class="productproperties">Price :{{data.price}}</td>
       <td class="productproperties">Discount :<span class="discount"> {{data.discount}}</span></td>
-     </p>   
-<p>Available colors : {{data.colors}}
+      <p>Available colors : {{data.colors}}
 <tr *ngFor="let color of data.colors">	
 <div class="tiles" [style.background-color]="color"
  ></div>
 </tr>
 </p>     
 <p>{{data.description}}</p>
-<button (click)="addToCart(data)">{{clicked==true?"Checkout":"Add to Cart"}}</button>
-<br><button  routerLink="/">Browse More Products</button>
+
+
+  </mat-card-content>
+  <mat-card-actions>
+<button mat-raised-button (click)="addToCart(data)">{{clicked==true?"Checkout":"Add to Cart"}}</button>
+<br><button mat-raised-button routerLink="/">Browse More Products</button>
+
+  </mat-card-actions>
+</mat-card>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </div>

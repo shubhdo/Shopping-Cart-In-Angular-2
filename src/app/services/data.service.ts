@@ -13,7 +13,7 @@ currentproduct:Product; //for getting current product
 totalPrice:number=0; 	//for storing total price of cart
 
 getProducts() {			//api call for fetching product from local json file
-	return this.http.get('assets/data.json').map(res=><Product[]>res.json())
+	return this.http.get('http://localhost:3001/api/v1/product/listofProducts').map(res=><Product[]>res.json())
 }
 
 

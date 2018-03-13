@@ -1,20 +1,29 @@
 <div class="container">
 
 <p>Products <span class="items">{{data.length}} items </span></p>
-  <table class="table table-striped">
+  <table class="table">
    
 <tr *ngFor="let product of data">
-     <p><img [attr.src]="product.icon" (click)="showDetails(product)" id="details">
-      <td class="productproperties name">{{product.name}}</td>
+<mat-card class="card">
+  <mat-card-header>
+    <mat-card-title class="heading">{{product.name}}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image  [attr.src]="product.icon" (click)="showDetails(product)" id="details">
+  <mat-card-content>
+    <p>
       <td class="productproperties">Price :{{product.price}}</td>
       <td class="productproperties">Discount :<span class="discount"> {{product.discount}}</span></td>
-     </p>
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+  <button mat-raised-button (click)="addToCart(product)">Add to Cart</button>
 
-    
-      <td>
-	    <button (click)="addToCart(product)">Add to Cart</button>
-      </td>
+  </mat-card-actions>
+</mat-card>
+
     </tr>
+
+
 </table>
 
 </div>
